@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../public/images/favicon.png" />
+    <title>Kanobi </title>
+    <meta name='robots' content='noindex,follow' />
+    <link href="../public/css/jquery.datetimepicker.css" rel="stylesheet" />
+    <link rel='stylesheet' id='promogear-bootstrap-css' href='../public/css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-font-awesome-min-css' href='../public/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-animate-min-css' href='../public/css/animate.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-jquery-fullpage-css' href='../public/css/jquery.fullPage.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-owl-carousel-css' href='../public/css/owl.carousel.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-jquery-mcustomscrollbar-min-css' href='../public/css/jquery.mCustomScrollbar.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-main-styles-css' href='../public/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='promogear-custom-styles-css' href='../public/css/custom.css' type='text/css' media='all' />
+</head>
+<body class="home page page-id-5 page-template page-template-template-homepage page-template-template-homepage-php  one-page">
+   
+    <div id="root">
+    </div>
+
+    <script src="../dist/app-bundle.js"></script>
+    <script src="../public/js/jquery-1.12.4.min.js"></script>
+    <script type='text/javascript' src='../public/js/jquery.mCustomScrollbar.min.js'></script>
+    <script type='text/javascript' src='../public/js/jquery.fullPage.min.js'></script>
+    <script type='text/javascript' src='../public/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='../public/js/easy-circle-skill.js'></script>
+    <script type='text/javascript' src='../public/js/owl.carousel.min.js'></script>
+    <script type='text/javascript' src='../public/js/main.js'></script>
+    <script type='text/javascript' src='../public/js/custom.js'></script>
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/waypoints.min.js"></script>
+    <script src="../public/js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 3,
+                time: 1000
+            });
+        });
+    </script>
+    <script src="../public/js/handleCounter.js"></script>
+    <script>
+        $(function ($) {
+            var options = {
+                minimum: 1,
+                maximize: 20,
+                onChange: valChanged,
+                onMinimum: function (e) {
+                    console.log('reached minimum: ' + e)
+                },
+                onMaximize: function (e) {
+                    console.log('reached maximize' + e)
+                }
+            }
+            $('#handleCounter').handleCounter(options)
+            $('#handleCounter2').handleCounter(options)
+            $('#handleCounter3').handleCounter({ maximize: 100 })
+        })
+        function valChanged(d) {
+            //            console.log(d)
+        }
+    </script>
+    <script src="../public/js/jquery.datetimepicker.full.js"></script>
+    <script>
+        $('#datetimepicker1').datetimepicker({
+            datepicker: false,
+            format: 'H:i',
+            step: 5
+        });
+        $('#datetimepicker2').datetimepicker({
+            /*yearOffset:222,*/
+            lang: 'ch',
+            timepicker: false,
+            format: 'd/m/Y',
+            formatDate: 'Y/m/d',
+            minDate: '-1970/01/02', // yesterday is minimum date
+            maxDate: '+1970/01/02' // and tommorow is maximum date calendar
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".button_js").click(function () {
+                $(".popup_contact_wrapper").toggle(200);
+            });
+        });
+    </script>
+
+</body>
+</html>

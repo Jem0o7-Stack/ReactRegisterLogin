@@ -1,0 +1,3 @@
+F:\ReactKanobiMasterPage\ReactKanobiMasterPage\obj\Debug\ReactKanobiMasterPage.njsprojAssemblyReference.cache
+F:\ReactKanobiMasterPage\ReactKanobiMasterPage\obj\Debug\ReactKanobiMasterPage.njsproj.CoreCompileInputs.cache
+F:\ReactKanobiMasterPage\ReactKanobiMasterPage\bin\Microsoft.NodejsTools.WebRole.dll
